@@ -1,11 +1,11 @@
 #include <iostream>
 #include <iomanip>
 using namespace std;
-int celcius[100];
+double celcius[100];
 double farenheit[100];
 double kelvin[100];
 int jumlah;
-void ubah(int celcius[])
+void ubah(double celcius[])
 {
 	for(int i=0;i<jumlah;i++)
 	{
@@ -27,7 +27,7 @@ int main(){
 		cout<<"-------------------------------------------"<<endl;
 	for(int i=0;i<jumlah;i++)
 	{
-	cout<<celcius[i]<<setw(10)<<farenheit[i]<<setw(15)<<kelvin[i]<<endl;
+	cout<<fixed<<setprecision(2)<<celcius[i]<<setw(10)<<farenheit[i]<<setw(15)<<kelvin[i]<<endl;
 	
 	}
 }
